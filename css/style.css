@@ -328,31 +328,18 @@ height: 120px;
 /* ADDITIONAL STYLES
 /*******************************************/
 
-@media only screen and (max-width: 800px) {
+@media (min-width:320px){
   :root {
       --nav-size: 50px;
-
-      --sudoku-cell-size: 30px;
-
-      --border-radius: 5px;
-
-      --space-y: 10px;
-
-      --gap: 2px;
-
       --font-size: 1rem;
       --font-size-lg: 1.5rem;
       --font-size-xl: 2rem;
   }
-
-  .input-name,
-  .btn {
-      height: 50px;
+  html, body { 
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1rem;
   }
-
-  .main-grid-cell.hover {
-      border-width: 2px;
-  }
+ 
 
   .screen {
       min-width: unset;
@@ -360,5 +347,17 @@ height: 120px;
 
   .main {
       height: 100vh;
+  }
+
+  .gameboy-body {
+    width: 570px;
+    height: 890px;
+  }
+  .screen {
+    width: 486px;
+  }
+  .screen .glass {
+    width: 100%;
+    height: 360px;
   }
 }
